@@ -2,7 +2,7 @@
 
 ## About Device
 
-![UMIDIGI A5 Pro](https://www.umidigi.com/new/Images/a5pro/overview/13_1.png)
+![UMIDIGI A5 Pro](https://sun9-57.userapi.com/c856032/v856032328/f88c8/G3bajBsEU3g.jpg)
 
 ### Specifications
 
