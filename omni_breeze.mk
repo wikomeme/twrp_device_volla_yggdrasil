@@ -8,10 +8,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
+PRODUCT_RELEASE_NAME := Breeze
 PRODUCT_BRAND := UMIDIGI
 PRODUCT_DEVICE := breeze
 PRODUCT_MANUFACTURER := UMIDIGI
-PRODUCT_MODEL := breeze
+PRODUCT_MODEL := A5 PRO
 PRODUCT_NAME := omni_breeze
 
 # enable stock zip packages flash
