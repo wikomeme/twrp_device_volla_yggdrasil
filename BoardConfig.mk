@@ -80,8 +80,9 @@ BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_REAL_SDCARD := true
-TW_ALLOW_PARTITION_SDCARD := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
+#TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
 TARGET_DISABLE_TRIPLE_BUFFERING := false
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 
@@ -110,7 +111,6 @@ TW_NO_BATT_PERCENT := false
 TW_SCREEN_BLANK_ON_BOOT := true
 
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TW_USE_TOOLBOX := true
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
@@ -134,7 +134,6 @@ TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_NO_USB_STORAGE := false
 TARGET_USES_LOGD := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-
 
 # Languages
 TW_EXTRA_LANGUAGES := true
