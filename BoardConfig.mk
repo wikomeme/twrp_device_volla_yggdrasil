@@ -19,6 +19,9 @@ TARGET_USES_64_BIT_BINDER := true
 
 BOARD_USES_MTK_HARDWARE := true
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_FOLDER)/sepolicy
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6763
 
@@ -94,7 +97,6 @@ TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness
 TW_EXCLUDE_TWRPAPP := true
 
 # Resolution
-HAVE_SELINUX := true
 TW_DEVICE_VERSION := 0 by Hadenix
 TW_THEME := portrait_hdpi
 # DEVICE_RESOLUTION := 1080x2280 (deprecated)
@@ -120,21 +122,19 @@ TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
 TW_CRYPTO_MNT_POINT := "/data"
 TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,barrier=0,data=ordered"
 
-# Debug
-TWRP_INCLUDE_LOGCAT := true
-
 # Storage
 TW_HAS_MTP := true
 TW_MTP_DEVICE := /dev/mtp_usb
 TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_NO_REBOOT_BOOTLOADER := false
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_NO_USB_STORAGE := false
-TARGET_USES_LOGD := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
+HAVE_SELINUX := true
 
 # Languages
 TW_EXTRA_LANGUAGES := true
