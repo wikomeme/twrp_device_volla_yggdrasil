@@ -44,6 +44,10 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/zImage
 BOARD_PREBUILT_DTBOIMAGE := $(LOCAL_PATH)/prebuilt/recovery_dtbo.img
 
+# Encryption
+PLATFORM_SECURITY_PATCH := 2025-12-31
+TW_INCLUDE_FBE := true
+
 #Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
@@ -80,7 +84,7 @@ BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_REAL_SDCARD := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file"
 TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
 TARGET_DISABLE_TRIPLE_BUFFERING := false
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
