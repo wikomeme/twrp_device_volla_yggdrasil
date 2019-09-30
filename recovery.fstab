@@ -3,8 +3,8 @@
 #
 /system         ext4  /dev/block/platform/bootdevice/by-name/system    flags=backup=0
 /system_image	emmc  /dev/block/platform/bootdevice/by-name/system   flags=display="system_image";backup=1;flashimg=1
-/vendor         ext4  /dev/block/platform/bootdevice/by-name/vendor     flags=backup=0
-/vendor_image	emmc  /dev/block/platform/bootdevice/by-name/vendor   flags=display="vendor_image";wipeingui;backup=1;flashimg=1  
+/vendor         ext4  /dev/block/platform/bootdevice/by-name/vendor     flags=backup=0;wipeingui
+/vendor_image	emmc  /dev/block/platform/bootdevice/by-name/vendor   flags=display="vendor_image";backup=1;flashimg=1  
 /data           ext4  /dev/block/platform/bootdevice/by-name/userdata     flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata
 /cache          ext4  /dev/block/platform/bootdevice/by-name/cache  	flags=display="Сache"
 /protect_f      ext4  /dev/block/platform/bootdevice/by-name/protect1    
