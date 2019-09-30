@@ -84,7 +84,6 @@ BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_REAL_SDCARD := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file"
 TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
 TARGET_DISABLE_TRIPLE_BUFFERING := false
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
@@ -114,6 +113,10 @@ TW_SCREEN_BLANK_ON_BOOT := true
 
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_USE_TOOLBOX := true
+
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
