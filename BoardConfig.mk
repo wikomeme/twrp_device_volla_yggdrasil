@@ -44,10 +44,6 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/zImage
 BOARD_PREBUILT_DTBOIMAGE := $(LOCAL_PATH)/prebuilt/recovery_dtbo.img
 
-# Encryption
-PLATFORM_SECURITY_PATCH := 2025-12-31
-TW_INCLUDE_FBE := true
-
 #Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
@@ -91,8 +87,6 @@ TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness
 ########
 # TWRP #
 ########
-
-TW_ALWAYS_RMRF := true
 
 # Excludes
 TW_EXCLUDE_TWRPAPP := true
