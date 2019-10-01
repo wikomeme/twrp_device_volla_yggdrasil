@@ -14,4 +14,4 @@ ro.treble.enabled=true
 
 ro.mediatek.chip_ver=S01
 ro.mediatek.platform=MT6763
-ro.mtk_microtrust_tee_support=1
+ro.vendor.mtk_microtrust_tee_support=1
