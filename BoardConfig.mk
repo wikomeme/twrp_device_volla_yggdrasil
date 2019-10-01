@@ -80,6 +80,7 @@ BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 BOARD_HAS_NO_REAL_SDCARD := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
 TARGET_DISABLE_TRIPLE_BUFFERING := false
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
@@ -92,7 +93,7 @@ TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness
 TW_EXCLUDE_TWRPAPP := true
 
 # Resolution
-TW_DEVICE_VERSION := 0 by Hadenix
+TW_DEVICE_VERSION := 9 by Hadenix
 TW_THEME := portrait_hdpi
 # DEVICE_RESOLUTION := 1080x2280 (deprecated)
 DEVICE_SCREEN_WIDTH := 1080
