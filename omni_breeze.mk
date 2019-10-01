@@ -15,13 +15,6 @@ PRODUCT_MANUFACTURER := UMIDIGI
 PRODUCT_MODEL := A5 PRO
 PRODUCT_NAME := omni_breeze
 
-# enable stock zip packages flash
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.treble.enabled=true \
-    persist.sys.usb.config=mtp \
-    persist.service.adb.enable=1 \
-    persist.service.debuggable=1 \
-    ro.secure=1 \
-    ro.adb.secure=0 \
-    ro.debuggable=1 \
-    ro.allow.mock.location=0
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT="UMIDIGI/A5_Pro/A5_Pro:9/PPR1.180610.011/1559618636:user/release-keys" \
+    PRIVATE_BUILD_DESC="A5_Pro-user 9 PPR1.180610.011 1559618636 release-keys"
