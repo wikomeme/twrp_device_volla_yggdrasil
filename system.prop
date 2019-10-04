@@ -4,6 +4,10 @@ ro.sf.lcd_density=480
 
 #persist.sys.usb.config=mtp
 persist.sys.isUsbOtgEnabled=true
+
+ro.carrier=unknown
+persist.sys.timezone=Europe/Moscow
+
 ro.sys.usb.mtp.whql.enable=0
 ro.sys.usb.storage.type=mtp
 ro.sys.usb.bicr=no
@@ -14,4 +18,6 @@ ro.treble.enabled=true
 
 ro.mediatek.chip_ver=S01
 ro.mediatek.platform=MT6763
-ro.vendor.mtk_microtrust_tee_support=1
+ro.mtk_tee_gp_support=1
+ro.mtk_microtrust_tee_support=1
+ro.mtk_soter_support=1
