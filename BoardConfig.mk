@@ -95,7 +95,7 @@ TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness
 TW_EXCLUDE_TWRPAPP := true
 
 # Resolution
-TW_DEVICE_VERSION := 28 by Hadenix
+TW_DEVICE_VERSION := 32 by Hadenix
 TW_THEME := portrait_hdpi
 # DEVICE_RESOLUTION := 1080x2280 (deprecated)
 DEVICE_SCREEN_WIDTH := 1080
@@ -106,7 +106,7 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_DEFAULT_BRIGHTNESS := 188
 TW_MAX_BRIGHTNESS := 255
 TW_NO_SCREEN_BLANK := true
-TW_NO_SCREEN_TIMEOUT := true
+#TW_NO_SCREEN_TIMEOUT := true
 TW_NO_BATT_PERCENT := false
 TW_SCREEN_BLANK_ON_BOOT := true
 
