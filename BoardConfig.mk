@@ -95,7 +95,7 @@ TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness
 TW_EXCLUDE_TWRPAPP := true
 
 # Resolution
-TW_DEVICE_VERSION := 32 by Hadenix
+TW_DEVICE_VERSION := 35 by Hadenix
 TW_THEME := portrait_hdpi
 # DEVICE_RESOLUTION := 1080x2280 (deprecated)
 DEVICE_SCREEN_WIDTH := 1080
