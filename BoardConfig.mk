@@ -28,7 +28,6 @@ TARGET_BOOTLOADER_BOARD_NAME := mt6763
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
-BOARD_KERNEL_CMDLINE += veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_RAMDISK_OFFSET := 0x14f88000
@@ -78,13 +77,11 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 #BOARD_SUPPRESS_EMMC_WIPE := true
 #BOARD_RECOVERY_SWIPE := true
 #BOARD_USES_MMCUTILS := true
-#BOARD_AVB_ENABLE := true
+BOARD_AVB_ENABLE := true
 #BOARD_HAS_NO_REAL_SDCARD := true
-BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
-TARGET_DISABLE_TRIPLE_BUFFERING := false
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 
 ########
@@ -95,9 +92,8 @@ TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness
 TW_EXCLUDE_TWRPAPP := true
 
 # Resolution
-TW_DEVICE_VERSION := 35 by Hadenix
+TW_DEVICE_VERSION := 43 by Hadenix
 TW_THEME := portrait_hdpi
-# DEVICE_RESOLUTION := 1080x2280 (deprecated)
 DEVICE_SCREEN_WIDTH := 1080
 DEVICE_SCREEN_HEIGHT := 2280
 
@@ -105,9 +101,7 @@ DEVICE_SCREEN_HEIGHT := 2280
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_NO_SCREEN_BLANK := true
-#TW_NO_SCREEN_TIMEOUT := true
 TW_NO_BATT_PERCENT := false
-TW_SCREEN_BLANK_ON_BOOT := true
 
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_USE_TOOLBOX := true
