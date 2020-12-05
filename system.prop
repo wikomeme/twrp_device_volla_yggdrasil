@@ -1,7 +1,7 @@
-ro.product.brand=UMIDIGI
-ro.product.name=A5_Pro
-ro.product.device=A5_Pro
-ro.build.product=A5_Pro
+ro.product.brand=Volla
+ro.product.name=yggdrasil
+ro.product.device=yggdrasil
+ro.build.product=yggdrasil
 ro.treble.enabled=true
 
 ro.secure=0
