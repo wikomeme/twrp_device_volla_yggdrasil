@@ -1,11 +1,10 @@
 # Device path
-LOCAL_PATH := device/umidigi/A5_Pro
+LOCAL_PATH := device/volla/yggdrasil
 
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
@@ -131,7 +130,7 @@ TW_INTERNAL_STORAGE_PATH := "/data/media/0"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
-#TW_NO_REBOOT_BOOTLOADER := false
+TW_NO_REBOOT_BOOTLOADER := false
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_NO_USB_STORAGE := false
 TW_INPUT_BLACKLIST := "hbtp_vm"
